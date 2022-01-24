@@ -23,6 +23,10 @@ export class UsersService {
     return this.userModel.findOne({ _id: id });
   }
 
+  findByEmail(email: string) {
+    return this.userModel.findOne({ email });
+  }
+
   update(id: number, updateUserDto: UpdateUserDto) {
     return this.userModel.updateOne({ _id: id }, updateUserDto);
   }
