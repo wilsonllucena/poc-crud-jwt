@@ -5,14 +5,14 @@
 
 ## List Task
 
-[x] CRUD users 
-[x] MongoDB 
-[x] Authenticate JWT
-[x] Guards
-[x] Providers
-[] Interceptors
-[] Middlewares
-[] Pipes
+- [x] CRUD users 
+- [x] MongoDB 
+- [x] Authenticate JWT
+- [x] Guards
+- [x] Providers
+- [] Interceptors
+- [] Middlewares
+- [] Pipes
 
 ## Installation
 
