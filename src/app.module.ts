@@ -1,3 +1,4 @@
+import { AuthController } from './auth/auth.controller';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
@@ -12,7 +13,7 @@ import 'dotenv/config';
     AuthModule,
     UsersModule,
   ],
-  controllers: [],
+  controllers: [AuthController],
   providers: [],
 })
 export class AppModule {}

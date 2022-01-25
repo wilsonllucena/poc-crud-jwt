@@ -11,27 +11,27 @@ export class UsersService {
     @InjectModel(User.name) private readonly userModel: Model<User>,
   ) {}
 
-  create(createUserDto: CreateUserDto) {
-    return this.userModel.create(createUserDto);
+  async create(createUserDto: CreateUserDto) {
+    return await this.userModel.create(createUserDto);
   }
 
-  findAll() {
-    return this.userModel.find();
+  async findAll() {
+    return await this.userModel.find();
   }
 
-  findOne(id: number) {
-    return this.userModel.findOne({ _id: id });
+  async findOne(id: string) {
+    return await this.userModel.findOne({ _id: id });
   }
 
-  findByEmail(email: string) {
-    return this.userModel.findOne({ email });
+  async getByEmail(email: string) {
+    return await this.userModel.findOne({ email }).exec();
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
-    return this.userModel.updateOne({ _id: id }, updateUserDto);
+  async update(id: string, updateUserDto: UpdateUserDto) {
+    return await this.userModel.updateOne({ _id: id }, updateUserDto);
   }
 
-  remove(id: number) {
-    return this.userModel.deleteOne({ _id: id });
+  async remove(id: string) {
+    return await this.userModel.deleteOne({ _id: id });
   }
 }
