@@ -10,9 +10,9 @@
 - [x] Authenticate JWT
 - [x] Guards
 - [x] Providers
-- [] Interceptors
-- [] Middlewares
-- [] Pipes
+- [ ] Interceptors
+- [ ] Middlewares
+- [ ] Pipes
 
 ## Installation
 
