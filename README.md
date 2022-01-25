@@ -10,9 +10,12 @@
 - [x] Authenticate JWT
 - [x] Guards
 - [x] Providers
+- [ ] Tests (Jest)
 - [ ] Interceptors
 - [ ] Middlewares
 - [ ] Pipes
+- [ ] RabbitMQ
+- [ ] Others ...
 
 ## Installation
 

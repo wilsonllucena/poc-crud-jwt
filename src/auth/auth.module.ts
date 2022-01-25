@@ -1,6 +1,5 @@
 import { jwtConstants } from './shared/constants';
 import { Module } from '@nestjs/common';
-import { JwtService } from '@nestjs/jwt';
 import { JwtStrategy } from './shared/jwt.strategy';
 import { AuthController } from './auth.controller';
 import { JwtModule } from '@nestjs/jwt';
